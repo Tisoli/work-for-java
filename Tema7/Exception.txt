@@ -1,0 +1,6 @@
+ArithmeticException算术异常，如除以 0
+IndexOutOfBoundsException/ArrayIndexOutOfBoundsException索引越界
+NullPointerException矩阵为 null
+IOException in out
+NumberFormatException数字转化错误
+InputMismaException类输入不匹配异常
