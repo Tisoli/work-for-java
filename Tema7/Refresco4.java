@@ -1,11 +1,10 @@
-package JAVA.Tema7;
 
 public class Refresco4 {
 
     
 
 public static String Refresco4(char[][] matriz) {
-    String resultado =;
+    String resultado = "";
 
     for (int i = 0; i < matriz.length; i++) {
         for (int j = 0; j < matriz[i].length; j++) {

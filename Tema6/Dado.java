@@ -1,4 +1,3 @@
-package JAVA.Tema6;
 import java.util.Random;
 public class Dado extends Sorteo{
     private Random rand = new Random();

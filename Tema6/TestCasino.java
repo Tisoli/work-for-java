@@ -1,4 +1,4 @@
-package JAVA.Tema6;
+package Tema6;
 public class TestCasino {
     public static void main(String[] args) {
         Dado cliente1= new Dado();

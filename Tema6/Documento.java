@@ -1,4 +1,3 @@
-package JAVA.Tema6;
 public class Documento
 {
     private String titulo;

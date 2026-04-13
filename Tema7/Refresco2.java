@@ -1,4 +1,3 @@
-package JAVA.Tema7;
 import java.lang.Exception;
 public class Refresco2 {
 

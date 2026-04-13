@@ -4,7 +4,6 @@
 // 调用上一个练习中定义的“characterIn”方法，从标准输入读取“String”和整数“7”，并将其显示在屏幕上；
 // 捕获可能出现的异常情况，并在屏幕上显示消息：
 // “您尝试检索字符串中不存在的位置；”
-package JAVA.Tema7;
 import java.util.Scanner;
 
 public class MainPrograma {
