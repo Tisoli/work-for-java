@@ -33,4 +33,43 @@ public class Subasta {
         }
         return aceptada;
     }
+
+    public boolean pujar(Usuario usuario) {
+        boolean aceptada = false;
+        double cantidad;
+
+        if (this.pujaMayor == null) {
+            cantidad = 1.0;
+        } else {
+            cantidad = this.pujaMayor.getCantidad() + 1.0;
+        }
+
+        aceptada = this.pujar(usuario, cantidad);
+
+        return aceptada;
+    }
+
+    public boolean ejecutar() {
+        boolean ejecutada = false;
+
+        if (this.abierta) {
+            if (this.pujaMayor != null) {
+                Usuario ganador = this.pujaMayor.getPujador();
+                double cantidad = this.pujaMayor.getCantidad();
+
+                ganador.decrementarCredito(cantidad);
+                this.propietario.incrementarCredito(cantidad);
+
+                this.abierta = false;
+                ejecutada = true;
+            }
+        }
+
+        return ejecutada;
+    }
+
+    public Puja getPujaMayor() {
+        Puja resultado = this.pujaMayor;
+        return resultado;
+    }
 }

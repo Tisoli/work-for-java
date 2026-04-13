@@ -2,7 +2,8 @@ public class Usuario {
 
     private String nombre;
     private Double credito;
-    
+    private final double creditoInicial = 50.0;
+
     public Usuario(String nombre , Double credito) {
         this.nombre = nombre;
         this.credito = credito;
@@ -10,14 +11,14 @@ public class Usuario {
 
     public Usuario(String nombre) {
         this.nombre = nombre;
-        this.credito = 50.0;
+        this.credito = creditoInicial;
     }
 
     public void incrementarCredito(double candidad) {
         this.credito += candidad;
     }
 
-    public void dereminarCredito(double cantidad) {
+    public void decrementarCredito(double cantidad) {
         if (cantidad <= this.credito) {
             this.credito -= cantidad;
         } else {
